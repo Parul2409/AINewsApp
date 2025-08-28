@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "serve .",
-    "build": "echo 'No build step required for static site'",
+    "build": "cp -r . dist/ || xcopy . dist\\ /E /I",
     "start": "serve .",
     "deploy": "vercel --prod"
   },
